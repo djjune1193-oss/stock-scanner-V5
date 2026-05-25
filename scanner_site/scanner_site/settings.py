@@ -135,13 +135,8 @@ LOGIN_URL = "login"
 
 
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "goprofessionaltrader@gmail.com"
-EMAIL_HOST_PASSWORD = "rcms mdvp xcwh vhkf"
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+RESEND_API_KEY = "re_iBzPQwfq_7kBpTP4VdBUffAsogUCvtuMU"
+DEFAULT_FROM_EMAIL = "noreply@mail.swingtradesingh.com"
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
@@ -158,11 +153,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATIC_URL = '/static/'
 
